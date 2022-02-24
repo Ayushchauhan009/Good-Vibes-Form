@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A9D7E9;
+    height: 755px;
+}
+
+#title{
+    padding: 30px;
+    font-size: 48px;
+}
+
+.master-div-style{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 820px;
+    border-radius: 10px;
+    padding: 40px 0 40px 0;
+}
+
+#description{
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+#survey-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-rows{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column-reverse;
+}
