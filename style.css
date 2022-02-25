@@ -8,11 +8,11 @@
     align-items: center;
     flex-direction: column;
     background-color: #A9D7E9;
-    height: 755px;
+    height: 130vh;
 }
 
 #title{
-    padding: 30px;
+    margin: 30px;
     font-size: 48px;
 }
 
@@ -34,17 +34,52 @@
 
 #survey-form{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    
 }
+
 
 .form-rows{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /* justify-content: space-evenly; */
 }
 
-.fields{
-    display: flex;
-    flex-direction: column-reverse;
+.labels{
+    width: 55%;
+    float: left;
+    text-align: right;
+    padding-right: 20px;
+}
+
+input[type=text]{
+    width: 220px;
+    height: 30px;
+    
+
+}
+input[type=email]{
+    width: 220px;
+    height: 30px;
+}
+input[type=number]{
+    width: 220px;
+    height: 30px;
+}
+
+#dropdown{
+    width: 224px;
+    height: 30px;
+}
+
+.btn{
+    font-size: 18px;
+    background-color: #f3f3f3;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #6BA2CE;
+    margin-top: 20px;
+    height: 40px;
+    cursor: pointer;
 }
