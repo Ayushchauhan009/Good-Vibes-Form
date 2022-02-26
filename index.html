@@ -24,7 +24,7 @@
                         <label for="name" id="name-label">Name</label>
                     </div>
                     <div class="fields">
-                        <input type="text" name="name" id="name" placeholder="Enter your name here...">
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
                     </div>
                 </div>
                 <div class="form-rows">
@@ -32,7 +32,7 @@
                         <label for="email" id="email-label">Email</label>
                     </div>
                     <div class="fields">
-                        <input type="email" name="email" id="email" placeholder="Enter your email here...">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
                     </div>
                 </div>
                 <div class="form-rows">
@@ -62,68 +62,87 @@
                     <div class="labels">
                         <label for="time" id="time-label">At what time of day did it happen?</label>
                     </div>
-                    <div class="field">
-                        <div class="label">
-                            <label for="mtime" id="mtime">Morning</label>
+                    <div class="mainfield">
+                        <div class="field">
+                            <div class="label">
+                                <label for="mtime" id="mtime">Morning</label>
+                            </div>
+                            <div class="input">
+                                <input type="radio" value="1" name="morning" id="morning">
+                            </div>
                         </div>
-                        <div class="input">
-                            <input type="radio" value="1" name="morning" id="morning">
+                        <div class="field">
+                            <div class="label">
+                                <label for="atime" id="atime">After Noon</label>
+                            </div>
+                            <div class="input">
+                                <input type="radio" value="1" name="morning" id="noon">
+                            </div>
                         </div>
-                        <div class="label">
-                            <label for="atime" id="atime">After Noon</label>
+                        <div class="field">
+                            <div class="label">
+                                <label for="etime" id="etime">Evening</label>
+                            </div>
+                            <div class="input">
+                                <input type="radio" value="1" name="morning" id="evening">
+                            </div>
                         </div>
-                        <div class="input">
-                            <input type="radio" value="1" name="noon" id="noon">
-                        </div>
-                        <div class="label">
-                            <label for="etime" id="etime">Evening</label>
-                        </div>
-                        <div class="input">
-                            <input type="radio" value="1" name="evening" id="evening">
-                        </div>
-                        <div class="label">
-                            <label for="ntime" id="ntime">Night</label>
-                        </div>
-                        <div class="input">
-                            <input type="radio" value="1" name="night" id="night">
+                        <div class="field">
+                            <div class="label">
+                                <label for="ntime" id="ntime">Night</label>
+                            </div>
+                            <div class="input">
+                                <input type="radio" value="1" name="morning" id="night">
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="form-rows">
                     <div class="labels">
                         <label for="name" id="name-label">What emotions did you experience?<br>(Select all that apply)
                         </label>
                     </div>
-                    <div class="fields">
-                        <div class="label">
-                            <label for="mtime" id="mtime">Excited</label>
+                    <div class="mainfield">
+                        <div class="field">
+                            <div class="label">
+                                <label for="mtime" id="mtime">Excited</label>
+                            </div>
+                            <div class="input">
+                                <input type="checkbox" name="morning" id="morning">
+                            </div>
                         </div>
-                        <div class="input">
-                            <input type="checkbox" name="morning" id="morning">
+                        <div class="field">
+                            <div class="label">
+                                <label for="atime" id="atime">Humbled</label>
+                            </div>
+                            <div class="input">
+                                <input type="checkbox" name="noon" id="noon">
+                            </div>
                         </div>
-                        <div class="label">
-                            <label for="atime" id="atime">Humbled</label>
+                        <div class="field">
+                            <div class="label">
+                                <label for="atime" id="atime">Elated</label>
+                            </div>
+                            <div class="input">
+                                <input type="checkbox" name="noon" id="noon">
+                            </div>
                         </div>
-                        <div class="input">
-                            <input type="checkbox" name="noon" id="noon">
+                        <div class="field">
+                            <div class="label">
+                                <label for="etime" id="etime">Loved</label>
+                            </div>
+                            <div class="input">
+                                <input type="checkbox" name="evening" id="evening">
+                            </div>
                         </div>
-                        <div class="label">
-                            <label for="atime" id="atime">Elated</label>
-                        </div>
-                        <div class="input">
-                            <input type="checkbox" name="noon" id="noon">
-                        </div>
-                        <div class="label">
-                            <label for="etime" id="etime">Loved</label>
-                        </div>
-                        <div class="input">
-                            <input type="checkbox" name="evening" id="evening">
-                        </div>
-                        <div class="label">
-                            <label for="ntime" id="ntime">Enthusiastic</label>
-                        </div>
-                        <div class="input">
-                            <input type="checkbox" name="night" id="night">
+                        <div class="field">
+                            <div class="label">
+                                <label for="ntime" id="ntime">Enthusiastic</label>
+                            </div>
+                            <div class="input">
+                                <input type="checkbox" name="night" id="night">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +159,9 @@
                 </div>
 
             </form>
-            <button type="submit" class="btn">Submit</button>
+            <form action="/done.html">
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </div>
     </div>
 </body>
